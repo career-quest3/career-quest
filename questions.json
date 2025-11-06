@@ -1,0 +1,1170 @@
+[
+    {
+    "id": 1,
+    "question": "مريض يشتكي من صداع متكرر. ماذا تفعل؟",
+    "choices": [
+      { "text": "تعمل فحص شامل وتطلب تحاليل.", "scores": { "doctor": 3, "nurse": 0, "surgeon": 0 } },
+      { "text": "تصرف له علاج مبدئي وتنتظر النتائج.", "scores": { "doctor": 2, "nurse": 0, "surgeon": 0 } }
+    ]
+  },
+    {
+    "id": 2,
+    "question": "طفل خايف من الإبرة. كيف تتصرف؟",
+    "choices": [
+      { "text": "تشرح له بلطف وتلهيه بقصة/لعبة", "scores": { "doctor": 3, "nurse": 2, "surgeon": 0 } },
+      { "text": "تعطيه الإبرة بسرعة بدون تفاصيل.", "scores": { "doctor": 1, "nurse": 1, "surgeon": 0 } }
+    ]
+  },
+    {
+    "id": 3,
+    "question": "زميلك يقترح علاج غير مقتنع فيه. ماذا تفعل؟",
+    "choices": [
+      { "text": "تناقشه بالأدلة العلمية.", "scores": { "doctor": 3, "nurse": 0, "surgeon": 0 } },
+      { "text": " تمشي على اقتراحه لتوفير الوقت", "scores": { "doctor": 1, "nurse": 0, "surgeon": 0 } }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "مريض يسألك عن مرضه. كيف ترد؟",
+    "choices": [
+      { "text": "تشرح بتفصيل علمي.", "scores": { "doctor": 3, "nurse": 1, "surgeon": 0 } },
+      { "text": "تبسط المعلومات بلغة سهلة.", "scores": { "doctor": 2, "nurse": 2, "surgeon": 0 } }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "الطوارئ مزدحمة، كيف تتصرف؟",
+    "choices": [
+      { "text": "تبدأ بالحالات الأخطر.", "scores": { "doctor": 3, "nurse": 2, "surgeon": 2 } },
+      { "text": "تعالج حسب ترتيب الوصول.", "scores": { "doctor": 2, "nurse": 1, "surgeon": 1 } }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "مريض يرفض الدواء، كيف تتصرف؟",
+    "choices": [
+      { "text": "تحاول تفهم سبب الرفض وتقنعه.", "scores": { "doctor": 3, "nurse": 2, "surgeon": 0 } },
+      { "text": "تحترم قراره وتوثق الحالة.", "scores": { "doctor": 2, "nurse": 1, "surgeon": 0 } }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "زميل جديد يطلب مساعدتك في التشخيص، كيف تتصرف؟",
+    "choices": [
+      { "text": "تعطيه وقتك وتدعمه.", "scores": { "doctor": 3, "nurse": 1, "surgeon": 1 } },
+      { "text": "تعطيه إجابة سريعة وتكمل عملك.", "scores": { "doctor": 2, "nurse": 0, "surgeon": 0 } }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "إدارة المستشفى تطلب منك اختصار وقت الكشف، ماذا تفعل؟",
+    "choices": [
+      { "text": "تلتزم وتقلل التفاصيل.", "scores": { "doctor": 2, "nurse": 1, "surgeon": 1 } },
+      { "text": "ترفض على حساب جودة التشخيص.", "scores": { "doctor": 3, "nurse": 0, "surgeon": 2 } }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "مريض يتوتر عند سماع التشخيص، كيف تتصرف؟",
+    "choices": [
+      { "text": "تهدئه وتدعمه نفسياً.", "scores": { "doctor": 3, "nurse": 2, "surgeon": 0 } },
+      { "text": "تركز على الجانب الطبي فقط.", "scores": { "doctor": 2, "nurse": 1, "surgeon": 1 } }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "طُلب منك تدريب طلاب طب، ماذا تفعل؟",
+    "choices": [
+      { "text": "تشرح لهم الخطوات وتعطيهم فرصة يشاركون.", "scores": { "doctor": 3, "nurse": 2, "surgeon": 1 } },
+      { "text": "تركز على عملك الأساسي وتختصر تدريبهم.", "scores": { "doctor": 2, "nurse": 1, "surgeon": 0 } }
+    ]
+  },
+  {
+    "id": 11,
+    "question": "مريض يعاني من نزيف. ماذا تفعل كممرض؟",
+    "choices": [
+      { "text": "تبدأ بإيقاف النزيف فورًا.", "scores": { "doctor": 0, "nurse": 3, "surgeon": 0 } },
+      { "text": "تستدعي الطبيب أولاً وتنتظر.", "scores": { "doctor": 2, "nurse": 2, "surgeon": 1 } }
+    ]
+  },
+  {
+    "id": 12,
+    "question": "مريض مسن يطلب المساعدة في الأكل. كيف تتصرف؟",
+    "choices": [
+      { "text": "تساعده بنفسك.", "scores": { "doctor": 0, "nurse": 3, "surgeon": 0 } },
+      { "text": "تبلغ أحد المرافقين.", "scores": { "doctor": 0, "nurse": 2, "surgeon": 0 } }
+    ]
+  },
+  {
+    "id": 13,
+    "question": "مريض متوتر ويرفض أخذ الدواء. كيف تتصرف؟",
+    "choices": [
+      { "text": "تشرح له بهدوء وتقنعه.", "scores": { "doctor": 0, "nurse": 3, "surgeon": 0 } },
+      { "text": "تترك الأمر للطبيب يقرر.", "scores": { "doctor": 2, "nurse": 2, "surgeon": 0 } }
+    ]
+  },
+  {
+    "id": 14,
+    "question": "زميلك الممرض جديد ويتردد في إعطاء الحقنة. ماذا تفعل؟",
+    "choices": [
+      { "text": "تعرض تعطيها بداله.", "scores": { "doctor": 0, "nurse": 3, "surgeon": 0 } },
+      { "text": "تتركه يتعلم بنفسه مع إشرافك.", "scores": { "doctor": 0, "nurse": 2, "surgeon": 0 } }
+    ]
+  },
+  {
+    "id": 15,
+    "question": "مريض يسألك أسئلة عن حالته. كيف ترد؟",
+    "choices": [
+      { "text": "تجاوب على قد معرفتك.", "scores": { "doctor": 0, "nurse": 3, "surgeon": 0 } },
+      { "text": "تحيله مباشرة للطبيب.", "scores": { "doctor": 3, "nurse": 2, "surgeon": 1 } }
+    ]
+  },
+  {
+    "id": 16,
+    "question": "تكتشف خطأ صغير في وصفة الدواء. ماذا تفعل؟",
+    "choices": [
+      { "text": "تبلغ الطبيب فورًا.", "scores": { "doctor": 0, "nurse": 3, "surgeon": 0 } },
+      { "text": "تعطي المريض حسب الوصفة كما هي.", "scores": { "doctor": 0, "nurse": 1, "surgeon": 0 } }
+    ]
+  },
+  {
+    "id": 17,
+    "question": "الطبيب يطلب منك تعمل شيء خارج اختصاصك، ماذا تفعل؟",
+    "choices": [
+      { "text": "ترفض بلطف وتوضح السبب.", "scores": { "doctor": 0, "nurse": 3, "surgeon": 0 } },
+      { "text": "تنفذ الطلب بدون نقاش.", "scores": { "doctor": 2, "nurse": 2, "surgeon": 0 } }
+    ]
+  },
+  {
+    "id": 18,
+    "question": "طفل يبكي أثناء إعطائه إبرة، كيف تتصرف؟",
+    "choices": [
+      { "text": "تلهيه وتستخدم أسلوب لطيف.", "scores": { "doctor": 0, "nurse": 3, "surgeon": 0 } },
+      { "text": "تنجز بسرعة بدون تضييع وقت.", "scores": { "doctor": 0, "nurse": 2, "surgeon": 0 } }
+    ]
+  },
+  {
+    "id": 19,
+    "question": "وحدة العناية مشغولة جدًا، كيف تتصرف؟",
+    "choices": [
+      { "text": "تركز على المهام الحرجة فقط.", "scores": { "doctor": 0, "nurse": 3, "surgeon": 0 } },
+      { "text": "تحاول تنجز كل شيء بالتساوي.", "scores": { "doctor": 0, "nurse": 2, "surgeon": 0 } }
+    ]
+  },
+  {
+    "id": 20,
+    "question": "مريض يمدح عملك أمام الإدارة، كيف تتصرف؟",
+    "choices": [
+      { "text": "تشكر المريض وتكمل عملك.", "scores": { "doctor": 0, "nurse": 3, "surgeon": 0 } },
+      { "text": "تستغل الموقف لإظهار جهودك.", "scores": { "doctor": 0, "nurse": 2, "surgeon": 0 } }
+    ]
+  },
+  {
+    "id": 21,
+    "question": "خلال عملية كبرى انخفض ضغط المريض، كيف تتصرف كجراح؟",
+    "choices": [
+      { "text": "توقف العملية وتتعامل مع الطارئ.", "scores": { "doctor": 0, "nurse": 0, "surgeon": 3 } },
+      { "text": "تكمل بسرعة لإنهاء العملية.", "scores": { "doctor": 0, "nurse": 0, "surgeon": 2 } }
+    ]
+  },
+  {
+    "id": 22,
+    "question": "طالب طب يطلب يراقبك في العملية، كيف تتصرف؟",
+    "choices": [
+      { "text": "تسمح له وتشرح الخطوات.", "scores": { "doctor": 0, "nurse": 1, "surgeon": 3 } },
+      { "text": "ترفض وتفضل التركيز.", "scores": { "doctor": 0, "nurse": 0, "surgeon": 2 } }
+    ]
+  },
+  {
+    "id": 23,
+    "question": "إدارة المستشفى تضغط لتقليل مدة العمليات، كيف تتصرف؟",
+    "choices": [
+      { "text": "تختصر الإجراءات.", "scores": { "doctor": 0, "nurse": 0, "surgeon": 2 } },
+      { "text": "ترفض وتلتزم بالدقة.", "scores": { "doctor": 0, "nurse": 0, "surgeon": 3 } }
+    ]
+  },
+  {
+    "id": 24,
+    "question": "مريض يطلب شرح تفاصيل العملية، كيف ترد؟",
+    "choices": [
+      { "text": "تعطيه شرح طبي كامل.", "scores": { "doctor": 0, "nurse": 0, "surgeon": 3 } },
+      { "text": "تشرح بشكل مبسط ومختصر.", "scores": { "doctor": 0, "nurse": 1, "surgeon": 2 } }
+    ]
+  },
+  {
+    "id": 25,
+    "question": "مضاعفات مفاجئة أثناء الجراحة، كيف تتصرف؟",
+    "choices": [
+      { "text": "تتصرف بهدوء وتتبع البروتوكول.", "scores": { "doctor": 0, "nurse": 0, "surgeon": 3 } },
+      { "text": "تجرب حل مبتكر خارج الروتين.", "scores": { "doctor": 0, "nurse": 0, "surgeon": 2 } }
+    ]
+  },
+  {
+    "id": 26,
+    "question": "فريقك يختلف معك أثناء الجراحة، كيف تتصرف؟",
+    "choices": [
+      { "text": "تسمع رأيهم وتقرر.", "scores": { "doctor": 0, "nurse": 0, "surgeon": 3 } },
+      { "text": "تتمسك بقرارك كقائد.", "scores": { "doctor": 0, "nurse": 0, "surgeon": 2 } }
+    ]
+  },
+  {
+    "id": 27,
+    "question": "مريض يحتاج عملية عاجلة بدون موافقة الأهل، كيف تتصرف؟",
+    "choices": [
+      { "text": "تجري العملية لإنقاذ حياته.", "scores": { "doctor": 0, "nurse": 0, "surgeon": 3 } },
+      { "text": "تنتظر الموافقة الرسمية.", "scores": { "doctor": 0, "nurse": 0, "surgeon": 2 } }
+    ]
+  },
+  {
+    "id": 28,
+    "question": "مريض خائف قبل العملية، كيف تتصرف؟",
+    "choices": [
+      { "text": "تطمئنه وتجلس معه.", "scores": { "doctor": 0, "nurse": 1, "surgeon": 3 } },
+      { "text": "تركز على تجهيزاتك فقط.", "scores": { "doctor": 0, "nurse": 0, "surgeon": 2 } }
+    ]
+  },
+  {
+    "id": 29,
+    "question": "انقطع التيار الكهربائي أثناء العملية، ماذا تفعل؟",
+    "choices": [
+      { "text": "تستخدم الأجهزة الاحتياطية وتكمل.", "scores": { "doctor": 0, "nurse": 0, "surgeon": 3 } },
+      { "text": "توقف العملية حتى يرجع التيار.", "scores": { "doctor": 0, "nurse": 0, "surgeon": 2 } }
+    ]
+  },
+  {
+    "id": 30,
+    "question": "بعد العملية طالب يسألك عن قرارك، ماذا تفعل؟",
+    "choices": [
+      { "text": "تشرح له المنطق وراءه.", "scores": { "doctor": 0, "nurse": 1, "surgeon": 3 } },
+      { "text": "تعطي إجابة مختصرة وتكمل.", "scores": { "doctor": 0, "nurse": 0, "surgeon": 2 } }
+    ]
+  },
+  {
+    "id": 31,
+    "question": "طالب يقاطعك باستمرار أثناء الشرح. ماذا تفعل؟",
+    "choices": [
+      { "text": "توقف وتتعامل معه مباشرة.", "scores": { "teacher": 3, "student_counselor": 0 } },
+      { "text": "تتجاهله وتكمل الدرس.", "scores": { "teacher": 2, "student_counselor": 0 } }
+    ]
+  },
+  {
+    "id": 32,
+    "question": "درس معقد وصعب على الطلاب. كيف تشرحه؟",
+    "choices": [
+      { "text": "تشرحه بالطريقة التقليدية من الكتاب.", "scores": { "teacher": 2, "student_counselor": 0 } },
+      { "text": "تستخدم صور وفيديو وأنشطة عملية.", "scores": { "teacher": 3, "student_counselor": 0 } }
+    ]
+  },
+  {
+    "id": 33,
+    "question": "طالب ضعيف في المشاركة الصفية، ماذا تفعل؟",
+    "choices": [
+      { "text": "تشجعه وتعطيه أسئلة سهلة.", "scores": { "teacher": 3, "student_counselor": 0 } },
+      { "text": "تتجاهله وتركز على المتفاعلين.", "scores": { "teacher": 2, "student_counselor": 0 } }
+    ]
+  },
+  {
+    "id": 34,
+    "question": "طالب يرسم أثناء الحصة بدل الاستماع. ماذا تفعل؟",
+    "choices": [
+      { "text": "تصادر الرسم وتنبهه.", "scores": { "teacher": 2, "student_counselor": 0 } },
+      { "text": "تعطيه نشاط مرتبط بالرسم بالدرس.", "scores": { "teacher": 3, "student_counselor": 0 } }
+    ]
+  },
+  {
+    "id": 35,
+    "question": "الإدارة تطلب منك إنهاء المنهج بسرعة. كيف تتصرف؟",
+    "choices": [
+      { "text": "تسرع وتغطي المنهج بشكل سطحي.", "scores": { "teacher": 2, "student_counselor": 0 } },
+      { "text": "تركز على الفهم حتى لو تأخرت.", "scores": { "teacher": 3, "student_counselor": 0 } }
+    ]
+  },
+  {
+    "id": 36,
+    "question": "طالب يسألك سؤال خارج المنهج، كيف تتصرف؟",
+    "choices": [
+      { "text": "تجاوبه وتفتح نقاش.", "scores": { "teacher": 3, "student_counselor": 0 } },
+      { "text": "تعتذر وتلتزم بالدرس.", "scores": { "teacher": 2, "student_counselor": 0 } }
+    ]
+  },
+  {
+    "id": 37,
+    "question": "مجموعة طلاب يتشاجرون أثناء الحصة، ماذا تفعل؟",
+    "choices": [
+      { "text": "توقف الدرس وتفصل بينهم.", "scores": { "teacher": 3, "student_counselor": 2 } },
+      { "text": "تتجاهلهم وتكمل.", "scores": { "teacher": 2, "student_counselor": 1 } }
+    ]
+  },
+  {
+    "id": 38,
+    "question": "لاحظت غياب طالب متكرر، كيف تتصرف؟",
+    "choices": [
+      { "text": "تتواصل مع ولي أمره.", "scores": { "teacher": 3, "student_counselor": 2 } },
+      { "text": "تبلغ الإدارة وتترك الموضوع.", "scores": { "teacher": 2, "student_counselor": 1 } }
+    ]
+  },
+  {
+    "id": 39,
+    "question": "طالب موهوب يتجاوز مستوى الصف، ماذا تفعل؟",
+    "choices": [
+      { "text": "تعطيه تحديات إضافية.", "scores": { "teacher": 3, "student_counselor": 1 } },
+      { "text": "تركز على بقية الطلاب فقط.", "scores": { "teacher": 2, "student_counselor": 2 } }
+    ]
+  },
+  {
+    "id": 40,
+    "question": "طالب يطلب شرح الدرس مرة ثانية، كيف تتصرف؟",
+    "choices": [
+      { "text": "تعيد الشرح بأسلوب مبسط.", "scores": { "teacher": 3, "student_counselor": 1 } },
+      { "text": "تطلب منه مراجعة الكتاب بنفسه.", "scores": { "teacher": 2, "student_counselor": 2 } }
+    ]
+  },
+  {
+    "id": 41,
+    "question": "طالب متوتر بسبب درجاته، كيف تتصرف كمرشد؟",
+    "choices": [
+      { "text": "تضع له خطة عملية للمذاكرة.", "scores": { "teacher": 0, "student_counselor": 3 } },
+      { "text": "تسمع له وتدعمه نفسيًا أولاً.", "scores": { "teacher": 0, "student_counselor": 2 } }
+    ]
+  },
+  {
+    "id": 42,
+    "question": "طالب يواجه تنمر من زملائه، ماذا تفعل؟",
+    "choices": [
+      { "text": "تتحدث مع الطلاب وتصلح بينهم.", "scores": { "teacher": 0, "student_counselor": 3 } },
+      { "text": "تبلغ الإدارة فورًا.", "scores": { "teacher": 0, "student_counselor": 2 } }
+    ]
+  },
+  {
+    "id": 43,
+    "question": "طالب متردد في اختيار تخصص جامعي، ماذا تفعل؟",
+    "choices": [
+      { "text": "تعطيه اختبارات ميول ونصائح.", "scores": { "teacher": 0, "student_counselor": 3 } },
+      { "text": "تخليه يقرر بنفسه بدون تدخل.", "scores": { "teacher": 0, "student_counselor": 2 } }
+    ]
+  },
+  {
+    "id": 44,
+    "question": "طالب يطلب مقابلة خاصة بك، كيف تتصرف؟",
+    "choices": [
+      { "text": "تخصص له وقت كافي وتستمع له.", "scores": { "teacher": 0, "student_counselor": 3 } },
+      { "text": "تعطيه وقت قصير وتختصر اللقاء.", "scores": { "teacher": 0, "student_counselor": 2 } }
+    ]
+  },
+  {
+    "id": 45,
+    "question": "طالب مشاغب يرفض التعاون، كيف تتصرف؟",
+    "choices": [
+      { "text": "تحاول تكسب ثقته وتفهم السبب.", "scores": { "teacher": 0, "student_counselor": 3 } },
+      { "text": "تبلغ والديه مباشرة.", "scores": { "teacher": 0, "student_counselor": 2 } }
+    ]
+  },
+  {
+    "id": 46,
+    "question": "مجموعة طلاب عندهم مشكلة جماعية، ماذا تفعل؟",
+    "choices": [
+      { "text": "تعقد جلسة مشتركة للنقاش.", "scores": { "teacher": 0, "student_counselor": 3 } },
+      { "text": "تعالج كل طالب على حدة.", "scores": { "teacher": 0, "student_counselor": 2 } }
+    ]
+  },
+  {
+    "id": 47,
+    "question": "طالب يعاني من قلة الثقة بالنفس، كيف تتصرف؟",
+    "choices": [
+      { "text": "تعطيه أنشطة تعزز ثقته.", "scores": { "teacher": 0, "student_counselor": 3 } },
+      { "text": "تكتفي بالتشجيع الكلامي فقط.", "scores": { "teacher": 0, "student_counselor": 2 } }
+    ]
+  },
+  {
+    "id": 48,
+    "question": "ولي أمر يشتكي من ابنه، كيف تتصرف؟",
+    "choices": [
+      { "text": "تستمع وتتعاطف مع ولي الأمر.", "scores": { "teacher": 0, "student_counselor": 3 } },
+      { "text": "تركز على سماع الطالب أولاً.", "scores": { "teacher": 0, "student_counselor": 2 } }
+    ]
+  },
+  {
+    "id": 49,
+    "question": "طالب متفوق لكنه تحت ضغط شديد، ماذا تفعل؟",
+    "choices": [
+      { "text": "تساعده بتنظيم وقته وأولوياته.", "scores": { "teacher": 0, "student_counselor": 3 } },
+      { "text": "تذكره أن الضغط طبيعي وتتركه.", "scores": { "teacher": 0, "student_counselor": 2 } }
+    ]
+  },
+  {
+    "id": 50,
+    "question": "إدارة المدرسة تطلب منك تقارير سريعة عن الطلاب، ماذا تفعل؟",
+    "choices": [
+      { "text": "تكتب تقارير دقيقة حتى لو تأخرت.", "scores": { "teacher": 0, "student_counselor": 3 } },
+      { "text": "تختصر وتنجز بسرعة.", "scores": { "teacher": 0, "student_counselor": 2 } }
+    ]
+  },
+  {
+    "id": 51,
+    "question": "مديرك يطلب ميزة جديدة للتطبيق، ماذا تفعل؟",
+    "choices": [
+      { "text": "تكتب كود سريع ومباشر.", "scores": { "software_engineer": 2, "architect": 0, "mechanical_engineer": 0 } },
+      { "text": "تفكر في هيكلية طويلة المدى.", "scores": { "software_engineer": 3, "architect": 0, "mechanical_engineer": 0 } }
+    ]
+  },
+  {
+    "id": 52,
+    "question": "زميلك يواجه Bug معقد، ماذا تفعل؟",
+    "choices": [
+      { "text": "تساعده في الحل.", "scores": { "software_engineer": 3, "architect": 0, "mechanical_engineer": 0 } },
+      { "text": "تركز على مهامك فقط.", "scores": { "software_engineer": 2, "architect": 0, "mechanical_engineer": 0 } }
+    ]
+  },
+  {
+    "id": 53,
+    "question": "المشروع متأخر عن الجدول، ماذا تفعل؟",
+    "choices": [
+      { "text": "تقلل الجودة وتسرع الإنجاز.", "scores": { "software_engineer": 2, "architect": 0, "mechanical_engineer": 0 } },
+      { "text": "تتمسك بجودة الكود حتى لو تأخرت.", "scores": { "software_engineer": 3, "architect": 0, "mechanical_engineer": 0 } }
+    ]
+  },
+  {
+    "id": 54,
+    "question": "العميل يطلب تعديل متكرر، ماذا تفعل؟",
+    "choices": [
+      { "text": "تلبي الطلب كما هو.", "scores": { "software_engineer": 2, "architect": 0, "mechanical_engineer": 0 } },
+      { "text": "تقترح بدائل عملية.", "scores": { "software_engineer": 3, "architect": 0, "mechanical_engineer": 0 } }
+    ]
+  },
+  {
+    "id": 55,
+    "question": "زميل جديد بالفريق، ماذا تفعل؟",
+    "choices": [
+      { "text": "تدربه وتدعمه.", "scores": { "software_engineer": 3, "architect": 0, "mechanical_engineer": 0 } },
+      { "text": "تتركه يتعلم بنفسه.", "scores": { "software_engineer": 2, "architect": 0, "mechanical_engineer": 0 } }
+    ]
+  },
+  {
+    "id": 56,
+    "question": "كودك مليء بالتعليقات التوضيحية، ماذا تفعل؟",
+    "choices": [
+      { "text": "تتركها ليسهل الفهم.", "scores": { "software_engineer": 3, "architect": 0, "mechanical_engineer": 0 } },
+      { "text": "تحذفها لتبسيط الشكل.", "scores": { "software_engineer": 2, "architect": 0, "mechanical_engineer": 0 } }
+    ]
+  },
+  {
+    "id": 57,
+    "question": "النظام تعطل أثناء العرض للعميل، ماذا تفعل؟",
+    "choices": [
+      { "text": "تحاول إصلاحه أمامهم.", "scores": { "software_engineer": 3, "architect": 0, "mechanical_engineer": 0 } },
+      { "text": "تعتذر وتؤجل العرض.", "scores": { "software_engineer": 2, "architect": 0, "mechanical_engineer": 0 } }
+    ]
+  },
+  {
+    "id": 58,
+    "question": "وجدت أداة برمجية جديدة، ماذا تفعل؟",
+    "choices": [
+      { "text": "تجربها مباشرة.", "scores": { "software_engineer": 3, "architect": 0, "mechanical_engineer": 0 } },
+      { "text": "تلتزم بالأدوات المعتادة.", "scores": { "software_engineer": 2, "architect": 0, "mechanical_engineer": 0 } }
+    ]
+  },
+  {
+    "id": 59,
+    "question": "اجتماع الفريق طويل وممل، ماذا تفعل؟",
+    "choices": [
+      { "text": "تقترح طرق لتقليل الوقت.", "scores": { "software_engineer": 3, "architect": 0, "mechanical_engineer": 0 } },
+      { "text": "تلتزم بالاجتماع بصمت.", "scores": { "software_engineer": 2, "architect": 0, "mechanical_engineer": 0 } }
+    ]
+  },
+  {
+    "id": 60,
+    "question": "مراجعة كود زميل، ماذا تفعل؟",
+    "choices": [
+      { "text": "تعطي ملاحظات مفصلة.", "scores": { "software_engineer": 3, "architect": 0, "mechanical_engineer": 0 } },
+      { "text": "توافق بسرعة بدون تدقيق.", "scores": { "software_engineer": 2, "architect": 0, "mechanical_engineer": 0 } }
+    ]
+  },
+  {
+    "id": 61,
+    "question": "العميل يطلب تصميم بسيط ورخيص، ماذا تفعل؟",
+    "choices": [
+      { "text": "تلتزم بالميزانية وتبسط التصميم.", "scores": { "software_engineer": 0, "architect": 3, "mechanical_engineer": 0 } },
+      { "text": "تضيف لمسة إبداعية حتى لو كلف أكثر.", "scores": { "software_engineer": 0, "architect": 2, "mechanical_engineer": 0 } }
+    ]
+  },
+  {
+    "id": 62,
+    "question": "فريقك يختلف على الشكل النهائي، ماذا تفعل؟",
+    "choices": [
+      { "text": "تجمع الآراء وتجد حل وسط.", "scores": { "software_engineer": 0, "architect": 3, "mechanical_engineer": 0 } },
+      { "text": "تتمسك برأيك لأنه الأفضل.", "scores": { "software_engineer": 0, "architect": 2, "mechanical_engineer": 0 } }
+    ]
+  },
+  {
+    "id": 63,
+    "question": "المدينة تفرض معايير جديدة للبناء، ماذا تفعل؟",
+    "choices": [
+      { "text": "تعدل التصميم ليتوافق.", "scores": { "software_engineer": 0, "architect": 3, "mechanical_engineer": 0 } },
+      { "text": "تحاول إقناعهم بالاستثناء.", "scores": { "software_engineer": 0, "architect": 2, "mechanical_engineer": 0 } }
+    ]
+  },
+  {
+    "id": 64,
+    "question": "موعد تسليم قريب، ماذا تفعل؟",
+    "choices": [
+      { "text": "تنجز بسرعة مع تقليل التفاصيل.", "scores": { "software_engineer": 0, "architect": 2, "mechanical_engineer": 0 } },
+      { "text": "تسلم أجزاء مكتملة فقط.", "scores": { "software_engineer": 0, "architect": 3, "mechanical_engineer": 0 } }
+    ]
+  },
+  {
+    "id": 65,
+    "question": "العميل يقترح فكرة غير عملية، ماذا تفعل؟",
+    "choices": [
+      { "text": "ترفضها وتوضح السبب.", "scores": { "software_engineer": 0, "architect": 3, "mechanical_engineer": 0 } },
+      { "text": "توافق وتنفذ كما يريد.", "scores": { "software_engineer": 0, "architect": 2, "mechanical_engineer": 0 } }
+    ]
+  },
+  {
+    "id": 66,
+    "question": "آلة تعطلت فجأة في المصنع، ماذا تفعل؟",
+    "choices": [
+      { "text": "تصلحها بنفسك مباشرة.", "scores": { "software_engineer": 0, "architect": 0, "mechanical_engineer": 3 } },
+      { "text": "تبلغ الفريق الفني وتتابع.", "scores": { "software_engineer": 0, "architect": 0, "mechanical_engineer": 2 } }
+    ]
+  },
+  {
+    "id": 67,
+    "question": "الإدارة تطلب تحسين الأداء، ماذا تفعل؟",
+    "choices": [
+      { "text": "تركز على تقليل الأخطاء.", "scores": { "software_engineer": 0, "architect": 0, "mechanical_engineer": 3 } },
+      { "text": "تركز على زيادة السرعة.", "scores": { "software_engineer": 0, "architect": 0, "mechanical_engineer": 2 } }
+    ]
+  },
+  {
+    "id": 68,
+    "question": "تلاحظ صوت غير طبيعي من الآلة، ماذا تفعل؟",
+    "choices": [
+      { "text": "توقفها فورًا للفحص.", "scores": { "software_engineer": 0, "architect": 0, "mechanical_engineer": 3 } },
+      { "text": "تتركها تعمل حتى يتأكد العطل.", "scores": { "software_engineer": 0, "architect": 0, "mechanical_engineer": 2 } }
+    ]
+  },
+  {
+    "id": 69,
+    "question": "فريقك يختلف على طريقة الإصلاح، ماذا تفعل؟",
+    "choices": [
+      { "text": "تستمع لهم وتجمع رأي وسط.", "scores": { "software_engineer": 0, "architect": 0, "mechanical_engineer": 3 } },
+      { "text": "تختار طريقتك وتفرضها.", "scores": { "software_engineer": 0, "architect": 0, "mechanical_engineer": 2 } }
+    ]
+  },
+  {
+    "id": 70,
+    "question": "طلبوا منك تصميم جزء جديد، ماذا تفعل؟",
+    "choices": [
+      { "text": "تبدأ بحسابات دقيقة.", "scores": { "software_engineer": 0, "architect": 0, "mechanical_engineer": 3 } },
+      { "text": "تعتمد على تجارب سابقة.", "scores": { "software_engineer": 0, "architect": 0, "mechanical_engineer": 2 } }
+    ]
+  },
+  {
+    "id": 71,
+    "question": "مواد خام وصلت بجودة ضعيفة، ماذا تفعل؟",
+    "choices": [
+      { "text": "ترفضها وتبلغ المورد.", "scores": { "software_engineer": 0, "architect": 0, "mechanical_engineer": 3 } },
+      { "text": "تستخدمها لتوفير الوقت.", "scores": { "software_engineer": 0, "architect": 0, "mechanical_engineer": 2 } }
+    ]
+  },
+  {
+    "id": 72,
+    "question": "موعد تسليم قريب جداً، ماذا تفعل؟",
+    "choices": [
+      { "text": "تلتزم بالاختبار الكامل.", "scores": { "software_engineer": 0, "architect": 0, "mechanical_engineer": 3 } },
+      { "text": "تختصر خطوات الاختبار.", "scores": { "software_engineer": 0, "architect": 0, "mechanical_engineer": 2 } }
+    ]
+  },
+  {
+    "id": 73,
+    "question": "زميلك يقترح تعديل تصميمك، ماذا تفعل؟",
+    "choices": [
+      { "text": "تناقشه وتحلل اقتراحه.", "scores": { "software_engineer": 0, "architect": 0, "mechanical_engineer": 3 } },
+      { "text": "ترفض وتكمل كما هو.", "scores": { "software_engineer": 0, "architect": 0, "mechanical_engineer": 2 } }
+    ]
+  },
+  {
+    "id": 74,
+    "question": "الآلة تحتاج صيانة دورية، ماذا تفعل؟",
+    "choices": [
+      { "text": "تعمل جدول ثابت.", "scores": { "software_engineer": 0, "architect": 0, "mechanical_engineer": 3 } },
+      { "text": "تصلحها عند الحاجة فقط.", "scores": { "software_engineer": 0, "architect": 0, "mechanical_engineer": 2 } }
+    ]
+  },
+  {
+    "id": 75,
+    "question": "إدارة المصنع تريد تقليل التكلفة، ماذا تفعل؟",
+    "choices": [
+      { "text": "تبحث عن حلول اقتصادية مبتكرة.", "scores": { "software_engineer": 0, "architect": 0, "mechanical_engineer": 3 } },
+      { "text": "تقلل الجودة لتوفير المال.", "scores": { "software_engineer": 0, "architect": 0, "mechanical_engineer": 2 } }
+    ]
+  },
+{
+  "id": 101,
+  "question": "لوحتك غير مفهومة للبعض، ماذا تفعل؟",
+  "choices": [
+    { "text": "تشرح المعنى المقصود بتفصيل.", "scores": { "visual_artist": 3, "graphic_designer": 0 } },
+    { "text": "تتركها لتفسير الجمهور.", "scores": { "visual_artist": 2, "graphic_designer": 0 } }
+  ]
+},
+{
+    "id" : 102,
+    "question" : "ضيق وقت قبل افتتاح المعرض، ماذا تفعل؟",
+    "choices" : [
+      { "text": "تكمل بسرعة حتى لو الجودة أقل.", "scores": { "visual_artist": 2, "graphic_designer": 0 } },
+      { "text": "تركز على عدد أقل لكن متقن.", "scores": { "visual_artist": 3, "graphic_designer": 0 } }
+    ]
+},
+  {
+    "id": 103,
+    "question": "شخص ينتقد عملك بشدة، ماذا تفعل؟",
+    "choices": [
+      { "text": "تستمع وتأخذ الملاحظات.", "scores": { "visual_artist": 3, "graphic_designer": 0 } },
+      { "text": "تدافع عن رؤيتك الفنية.", "scores": { "visual_artist": 2, "graphic_designer": 0 } }
+    ]
+  },
+  {
+    "id": 104,
+    "question": "مشتري محتمل يريد تغيير بسيط باللوحة، ماذا تفعل؟",
+    "choices": [
+      { "text": "توافق وتعدل حسب رغبته.", "scores": { "visual_artist": 2, "graphic_designer": 0 } },
+      { "text": "ترفض وتحافظ على عملك الأصلي.", "scores": { "visual_artist": 3, "graphic_designer": 0 } }
+    ]
+  },
+  {
+    "id": 105,
+    "question": "عندك فكرة جديدة للرسم، ماذا تفعل؟",
+    "choices": [
+      { "text": "تبدأ مباشرة بدون تخطيط.", "scores": { "visual_artist": 2, "graphic_designer": 0 } },
+      { "text": "تكتب خطة ورسومات أولية.", "scores": { "visual_artist": 3, "graphic_designer": 0 } }
+    ]
+  },
+  {
+    "id": 106,
+    "question": "مادة الرسم المفضلة غير متوفرة، ماذا تفعل؟",
+    "choices": [
+      { "text": "تجرب مادة بديلة.", "scores": { "visual_artist": 2, "graphic_designer": 0 } },
+      { "text": "تنتظر حتى تحصل على الأصلية.", "scores": { "visual_artist": 3, "graphic_designer": 0 } }
+    ]
+  },
+  {
+    "id": 107,
+    "question": "المعرض مزدحم وزوار يسألونك كثير، ماذا تفعل؟",
+    "choices": [
+      { "text": "تشرح لكل زائر بصبر.", "scores": { "visual_artist": 3, "graphic_designer": 0 } },
+      { "text": "تختصر وتجاوب بسرعة.", "scores": { "visual_artist": 2, "graphic_designer": 0 } }
+    ]
+  },
+  {
+    "id": 108,
+    "question": "زميل فنان يعرض التعاون في لوحة مشتركة، ماذا تفعل؟",
+    "choices": [
+      { "text": "توافق وتشارك معه.", "scores": { "visual_artist": 2, "graphic_designer": 0 } },
+      { "text": "تفضل الاستقلالية.", "scores": { "visual_artist": 3, "graphic_designer": 0 } }
+    ]
+  },
+  {
+    "id": 109,
+    "question": "لوحة قديمة لديك لم تكتمل، ماذا تفعل؟",
+    "choices": [
+      { "text": "تكملها الآن.", "scores": { "visual_artist": 3, "graphic_designer": 0 } },
+      { "text": "تبدأ لوحة جديدة تمامًا.", "scores": { "visual_artist": 2, "graphic_designer": 0 } }
+    ]
+  },
+  {
+    "id": 110,
+    "question": "مدرسة محلية تطلب ورشة رسم للأطفال، ماذا تفعل؟",
+    "choices": [
+      { "text": "توافق وتشرح بأسلوب مبسط.", "scores": { "visual_artist": 3, "graphic_designer": 0 } },
+      { "text": "ترفض وتفضل التركيز على معارضك.", "scores": { "visual_artist": 2, "graphic_designer": 0 } }
+    ]
+  },
+  {
+    "id": 111,
+    "question": "العميل يقترح تعديل غير مناسب، ماذا تفعل؟",
+    "choices": [
+      { "text": "تلتزم برأيه كما هو.", "scores": { "visual_artist": 0, "graphic_designer": 2 } },
+      { "text": "تناقشه وتقترح بدائل.", "scores": { "visual_artist": 0, "graphic_designer": 3 } }
+    ]
+  },
+  {
+    "id": 112,
+    "question": "موعد التسليم قريب جدًا، ماذا تفعل؟",
+    "choices": [
+      { "text": "تستخدم قوالب جاهزة.", "scores": { "visual_artist": 0, "graphic_designer": 2 } },
+      { "text": "تصمم من الصفر.", "scores": { "visual_artist": 0, "graphic_designer": 3 } }
+    ]
+  },
+  {
+    "id": 113,
+    "question": "مديرك يطلب أفكار جديدة للشعار، ماذا تفعل؟",
+    "choices": [
+      { "text": "تقدم عدة مسودات متنوعة.", "scores": { "visual_artist": 0, "graphic_designer": 3 } },
+      { "text": "تركز على فكرة واحدة قوية.", "scores": { "visual_artist": 0, "graphic_designer": 2 } }
+    ]
+  },
+  {
+    "id": 114,
+    "question": "زميلك يعرض تصميم أجمل من تصميمك، ماذا تفعل؟",
+    "choices": [
+      { "text": "تتعلم منه وتحسن عملك.", "scores": { "visual_artist": 0, "graphic_designer": 3 } },
+      { "text": "تتمسك بتصميمك.", "scores": { "visual_artist": 0, "graphic_designer": 2 } }
+    ]
+  },
+  {
+    "id": 115,
+    "question": "العميل يغير ذوقه باستمرار، ماذا تفعل؟",
+    "choices": [
+      { "text": "تصبر وتعدل كل مرة.", "scores": { "visual_artist": 0, "graphic_designer": 3 } },
+      { "text": "تضع له حدود واضحة.", "scores": { "visual_artist": 0, "graphic_designer": 2 } }
+    ]
+  },
+  {
+    "id": 116,
+    "question": "مشروع يتطلب برنامج تصميم جديد، ماذا تفعل؟",
+    "choices": [
+      { "text": "تتعلمه بسرعة.", "scores": { "visual_artist": 0, "graphic_designer": 3 } },
+      { "text": "تستخدم الأدوات التي تعرفها فقط.", "scores": { "visual_artist": 0, "graphic_designer": 2 } }
+    ]
+  },
+  {
+    "id": 117,
+    "question": "إعلان يحتاج جذب انتباه الشباب، ماذا تفعل؟",
+    "choices": [
+      { "text": "تستخدم ألوان جريئة وحديثة.", "scores": { "visual_artist": 0, "graphic_designer": 3 } },
+      { "text": "تختار ألوان هادئة وتقليدية.", "scores": { "visual_artist": 0, "graphic_designer": 2 } }
+    ]
+  },
+  {
+    "id": 118,
+    "question": "الفريق يختلف حول شكل الحملة، ماذا تفعل؟",
+    "choices": [
+      { "text": "تجمع الآراء وتجد حل وسط.", "scores": { "visual_artist": 0, "graphic_designer": 3 } },
+      { "text": "تدافع عن فكرتك للنهاية.", "scores": { "visual_artist": 0, "graphic_designer": 2 } }
+    ]
+  },
+  {
+    "id": 119,
+    "question": "العميل يسألك تشرح تصميمك، ماذا تفعل؟",
+    "choices": [
+      { "text": "تشرح الرموز والأفكار بوضوح.", "scores": { "visual_artist": 0, "graphic_designer": 3 } },
+      { "text": "تكتفي بعرض الشكل النهائي.", "scores": { "visual_artist": 0, "graphic_designer": 2 } }
+    ]
+  },
+  {
+    "id": 120,
+    "question": "ضغط عمل بمشاريع كثيرة، ماذا تفعل؟",
+    "choices": [
+      { "text": "تنظم وقتك وتنجز تدريجيًا.", "scores": { "visual_artist": 0, "graphic_designer": 3 } },
+    { "text": "تركز على أسهل المشاريع أولًا.", "scores": { "visual_artist": 0, "graphic_designer": 2 } }
+  ]
+},
+{
+"id": 121,
+"question": "كيف تبدأ مشروع برمجي جديد؟",
+  "choices": [
+    { "text": "تبدأ تكتب الكود مباشرة.", "scores": { "programmer": 2, "cybersecurity": 0 } },
+    { "text": "تخطط وترسم هيكل أولًا.", "scores": { "programmer": 3, "cybersecurity": 0 } }
+  ]
+},
+{
+  "id": 122,
+  "question": "واجهت مشكلة تقنية صعبة، ماذا تفعل؟",
+  "choices": [
+    { "text": "تبحث في المنتديات والمراجع.", "scores": { "programmer": 3, "cybersecurity": 0 } },
+    { "text": "تحاول تجرب بنفسك حتى تنجح.", "scores": { "programmer": 2, "cybersecurity": 0 } }
+  ]
+},
+{
+  "id": 123,
+  "question": "زميلك يقترح طريقة جديدة للبرمجة، ماذا تفعل؟",
+  "choices": [
+    { "text": "تعتمد طريقته الجديدة.", "scores": { "programmer": 2, "cybersecurity": 0 } },
+    { "text": "تتمسك بأسلوبك المعتاد.", "scores": { "programmer": 3, "cybersecurity": 0 } }
+  ]
+},
+{
+  "id": 124,
+    "choices": [
+      { "text": "تركز على السرعة حتى لو فيه أخطاء.", "scores": { "programmer": 2, "cybersecurity": 0 } },
+      { "text": "تركز على الجودة حتى لو تأخر.", "scores": { "programmer": 3, "cybersecurity": 0 } }
+    ]
+  },
+  {
+    "id": 125,
+    "question": "مشروع يحتاج لغة جديدة ما تعرفها، ماذا تفعل؟",
+    "choices": [
+      { "text": "تتعلم اللغة وتجرّب.", "scores": { "programmer": 3, "cybersecurity": 0 } },
+      { "text": "تحاول حلها باللغات التي تعرفها.", "scores": { "programmer": 2, "cybersecurity": 0 } }
+    ]
+  },
+  {
+    "id": 126,
+    "question": "كودك غير مفهوم لزملائك، ماذا تفعل؟",
+    "choices": [
+      { "text": "تضيف تعليقات وتوضيحات.", "scores": { "programmer": 3, "cybersecurity": 0 } },
+      { "text": "تتركه كما هو.", "scores": { "programmer": 2, "cybersecurity": 0 } }
+    ]
+  },
+  {
+    "id": 127,
+    "question": "عندك خيار بين عمل فردي أو فريق، ماذا تفعل؟",
+    "choices": [
+      { "text": "تشتغل لوحدك.", "scores": { "programmer": 2, "cybersecurity": 0 } },
+      { "text": "تشتغل مع الفريق.", "scores": { "programmer": 3, "cybersecurity": 0 } }
+    ]
+  },
+  {
+    "id": 128,
+    "question": "تطبيقك حصل تقييم سلبي من المستخدمين، ماذا تفعل؟",
+    "choices": [
+      { "text": "تصلح وتطور النسخة.", "scores": { "programmer": 3, "cybersecurity": 0 } },
+      { "text": "تتجاهل وتكمل مشروع جديد.", "scores": { "programmer": 2, "cybersecurity": 0 } }
+    ]
+  },
+  {
+    "id": 129,
+    "question": "مديرك يطلب ميزة غير واقعية، ماذا تفعل؟",
+    "choices": [
+      { "text": "تحاول تنفيذها قدر الإمكان.", "scores": { "programmer": 2, "cybersecurity": 0 } },
+      { "text": "تشرح له الصعوبات وتقترح بديل.", "scores": { "programmer": 3, "cybersecurity": 0 } }
+    ]
+  },
+  {
+    "id": 130,
+    "question": "وصل تحديث جديد لأداة التطوير، ماذا تفعل؟",
+    "choices": [
+      { "text": "تجربها مباشرة.", "scores": { "programmer": 3, "cybersecurity": 0 } },
+      { "text": "تنتظر حتى يتأكد الآخرون منها.", "scores": { "programmer": 2, "cybersecurity": 0 } }
+    ]
+  },
+  {
+    "id": 131,
+    "question": "ورد تحذير عن هجوم محتمل، ماذا تفعل؟",
+    "choices": [
+      { "text": "تبلغ الإدارة فورًا.", "scores": { "programmer": 0, "cybersecurity": 2 } },
+      { "text": "تبدأ تحقق بنفسك أولًا.", "scores": { "programmer": 0, "cybersecurity": 3 } }
+    ]
+  },
+  {
+    "id": 132,
+    "question": "لاحظت جهاز موظف مخترق، ماذا تفعل؟",
+    "choices": [
+      { "text": "تفصله مباشرة عن الشبكة.", "scores": { "programmer": 0, "cybersecurity": 3 } },
+      { "text": "تحاول تصلح من داخل الجهاز.", "scores": { "programmer": 0, "cybersecurity": 2 } }
+    ]
+  },
+  {
+    "id": 133,
+    "question": "إدارة الشركة تريد تقليل ميزانية الأمن، ماذا تفعل؟",
+    "choices": [
+      { "text": "توافق على التخفيف.", "scores": { "programmer": 0, "cybersecurity": 2 } },
+      { "text": "تشرح مخاطر القرار.", "scores": { "programmer": 0, "cybersecurity": 3 } }
+    ]
+  },
+  {
+    "id": 134,
+    "question": "مهاجم اخترق البريد الإلكتروني للشركة، ماذا تفعل؟",
+    "choices": [
+      { "text": "تغير كلمات السر فورًا.", "scores": { "programmer": 0, "cybersecurity": 3 } },
+      { "text": "تحقق أولًا من حجم الضرر.", "scores": { "programmer": 0, "cybersecurity": 2 } }
+    ]
+  },
+  {
+    "id": 135,
+    "question": "تقرير شهري عن أمان الشبكة، ماذا تفعل؟",
+    "choices": [
+      { "text": "تكتبه بتفصيل دقيق.", "scores": { "programmer": 0, "cybersecurity": 3 } },
+      { "text": "تكتبه مختصر وسريع.", "scores": { "programmer": 0, "cybersecurity": 2 } }
+    ]
+  },
+  {
+    "id": 136,
+    "question": "موظف يرفض اتباع سياسات الأمان، ماذا تفعل؟",
+    "choices": [
+      { "text": "تشرح له وتدرّبه.", "scores": { "programmer": 0, "cybersecurity": 3 } },
+      { "text": "ترفع تقرير لإدارته.", "scores": { "programmer": 0, "cybersecurity": 2 } }
+    ]
+  },
+  {
+    "id": 137,
+    "question": "وجدت ثغرة صغيرة في النظام، ماذا تفعل؟",
+    "choices": [
+      { "text": "تصلحها مباشرة.", "scores": { "programmer": 0, "cybersecurity": 3 } },
+      { "text": "تنتظر حتى تتأكد أكثر.", "scores": { "programmer": 0, "cybersecurity": 2 } }
+    ]
+  },
+  {
+    "id": 138,
+    "question": "مؤتمر عالمي للأمن السيبراني، ماذا تفعل؟",
+    "choices": [
+      { "text": "تحضر لتتعلم الجديد.", "scores": { "programmer": 0, "cybersecurity": 3 } },
+      { "text": "تكتفي بالقراءة أونلاين.", "scores": { "programmer": 0, "cybersecurity": 2 } }
+    ]
+  },
+  {
+    "id": 139,
+    "question": "هجوم في منتصف الليل وأنت خارج الدوام، ماذا تفعل؟",
+    "choices": [
+      { "text": "ترجع للشركة فورًا.", "scores": { "programmer": 0, "cybersecurity": 3 } },
+      { "text": "تنتظر للدوام الرسمي.", "scores": { "programmer": 0, "cybersecurity": 2 } }
+    ]
+  },
+{
+  "id": 140,
+  "question": "إدارة تسألك كيف تحمي البيانات، ماذا تفعل؟",
+  "choices": [
+    { "text": "تشرح بلغة تقنية دقيقة.", "scores": { "programmer": 0, "cybersecurity": 3 } },
+    { "text": "تشرح بلغة بسيطة يفهموها.", "scores": { "programmer": 0, "cybersecurity": 2 } }
+  ]
+},
+{
+  "id": 141,
+  "question": "مديرك يطلب تقرير مالي عاجل، ماذا تفعل؟",
+  "choices": [
+    { "text": "تنجزه بسرعة حتى لو في أخطاء بسيطة.", "scores": { "accountant": 2, "marketer": 0, "hr": 0 } },
+    { "text": "تتأخر قليلًا لكن تراجعه بدقة.", "scores": { "accountant": 3, "marketer": 0, "hr": 0 } }
+  ]
+},
+{
+  "id": 142,
+  "question": "زميل ارتكب خطأ في الحسابات، ماذا تفعل؟",
+  "choices": [
+    { "text": "تصلح الخطأ بنفسك.", "scores": { "accountant": 2, "marketer": 0, "hr": 0 } },
+    { "text": "تعلمه كيف يصححها.", "scores": { "accountant": 3, "marketer": 0, "hr": 0 } }
+  ]
+},
+{
+  "id": 143,
+  "question": "الشركة تشتري نظام محاسبة جديد، ماذا تفعل؟",
+  "choices": [
+    { "text": "تتعلمه وتستخدمه فورًا.", "scores": { "accountant": 3, "marketer": 0, "hr": 0 } },
+    { "text": "تفضل الاستمرار على النظام القديم.", "scores": { "accountant": 2, "marketer": 0, "hr": 0 } }
+  ]
+},
+
+
+  {
+    "id": 144,
+    "question": "مراجعة مالية من جهة خارجية، ماذا تفعل؟",
+    "choices": [
+      { "text": "تحضر كل المستندات بدقة.", "scores": { "accountant": 3, "marketer": 0, "hr": 0 } },
+      { "text": "تنتظر حتى يطلبوا أوراق محددة.", "scores": { "accountant": 2, "marketer": 0, "hr": 0 } }
+    ]
+  },
+  {
+    "id": 145,
+    "question": "زميلك يطلب منك شرح الميزانية، ماذا تفعل؟",
+    "choices": [
+      { "text": "تشرح بالأرقام فقط.", "scores": { "accountant": 2, "marketer": 0, "hr": 0 } },
+      { "text": "تبسطها بأمثلة عملية.", "scores": { "accountant": 3, "marketer": 0, "hr": 0 } }
+    ]
+  },
+  {
+    "id": 146,
+    "question": "ميزانية الشركة فيها خطأ كبير، ماذا تفعل؟",
+    "choices": [
+      { "text": "تبلغ الإدارة فورًا.", "scores": { "accountant": 3, "marketer": 0, "hr": 0 } },
+      { "text": "تحاول تصلحه بهدوء بدون ضجة.", "scores": { "accountant": 2, "marketer": 0, "hr": 0 } }
+    ]
+  },
+  {
+    "id": 147,
+    "question": "موعد تسليم التقرير قريب، ماذا تفعل؟",
+    "choices": [
+      { "text": "تركز على الشكل العام.", "scores": { "accountant": 2, "marketer": 0, "hr": 0 } },
+      { "text": "تركز على التفاصيل الدقيقة.", "scores": { "accountant": 3, "marketer": 0, "hr": 0 } }
+    ]
+  },
+  {
+    "id": 148,
+    "question": "عميل يطلب توضيح فاتورة، ماذا تفعل؟",
+    "choices": [
+      { "text": "تشرح له بلغة تقنية محاسبية.", "scores": { "accountant": 3, "marketer": 0, "hr": 0 } },
+      { "text": "تشرح له بلغة سهلة وبسيطة.", "scores": { "accountant": 2, "marketer": 0, "hr": 0 } }
+    ]
+  },
+  {
+    "id": 149,
+    "question": "لاحظت مصروف غير مبرر، ماذا تفعل؟",
+    "choices": [
+      { "text": "تتحقق وتكتب تقرير.", "scores": { "accountant": 3, "marketer": 0, "hr": 0 } },
+      { "text": "تتجاهله لأنه مبلغ صغير.", "scores": { "accountant": 2, "marketer": 0, "hr": 0 } }
+    ]
+  },
+  {
+    "id": 150,
+    "question": "رئيسك يطلب إحصائية غير جاهزة، ماذا تفعل؟",
+    "choices": [
+      { "text": "تعطيه تقدير تقريبي.", "scores": { "accountant": 2, "marketer": 0, "hr": 0 } },
+      { "text": "تطلب وقت إضافي للتأكد.", "scores": { "accountant": 3, "marketer": 0, "hr": 0 } }
+    ]
+  },
+  {
+    "id": 151,
+    "question": "مديرك يطلب حملة إعلانية، ماذا تفعل؟",
+    "choices": [
+      { "text": "تبدأ مباشرة بتنفيذ الأفكار.", "scores": { "accountant": 0, "marketer": 2, "hr": 0 } },
+      { "text": "تدرس السوق أولًا.", "scores": { "accountant": 0, "marketer": 3, "hr": 0 } }
+    ]
+  },
+  {
+    "id": 152,
+    "question": "المنتج جديد في السوق، ماذا تفعل؟",
+    "choices": [
+      { "text": "تركز على إعلانات مبهرة.", "scores": { "accountant": 0, "marketer": 2, "hr": 0 } },
+      { "text": "تركز على شرح مميزاته.", "scores": { "accountant": 0, "marketer": 3, "hr": 0 } }
+    ]
+  },
+  {
+    "id": 153,
+    "question": "الميزانية قليلة، ماذا تفعل؟",
+    "choices": [
+      { "text": "تبتكر حلول مجانية (سوشال ميديا).", "scores": { "accountant": 0, "marketer": 3, "hr": 0 } },
+      { "text": "تقلل جودة الإعلان.", "scores": { "accountant": 0, "marketer": 2, "hr": 0 } }
+    ]
+  },
+  {
+    "id": 154,
+    "question": "منافس أطلق عرض قوي، ماذا تفعل؟",
+    "choices": [
+      { "text": "تطور عرض أقوى.", "scores": { "accountant": 0, "marketer": 3, "hr": 0 } },
+      { "text": "تحافظ على خطتك الأصلية.", "scores": { "accountant": 0, "marketer": 2, "hr": 0 } }
+    ]
+  },
+  {
+    "id": 155,
+    "question": "عميل محتمل متردد، ماذا تفعل؟",
+    "choices": [
+      { "text": "تعطيه عروض إضافية.", "scores": { "accountant": 0, "marketer": 3, "hr": 0 } },
+      { "text": "تشرح له فوائد المنتج.", "scores": { "accountant": 0, "marketer": 2, "hr": 0 } }
+    ]
+  },
+  {
+    "id": 156,
+    "question": "حملتك الإعلانية فشلت، ماذا تفعل؟",
+    "choices": [
+      { "text": "تحلل الأسباب وتحسنها.", "scores": { "accountant": 0, "marketer": 3, "hr": 0 } },
+      { "text": "تنتقل لحملة جديدة.", "scores": { "accountant": 0, "marketer": 2, "hr": 0 } }
+    ]
+  },
+  {
+    "id": 157,
+    "question": "عميل يشتكي من الإعلان، ماذا تفعل؟",
+    "choices": [
+      { "text": "تستمع وتعدّل الإعلان.", "scores": { "accountant": 0, "marketer": 3, "hr": 0 } },
+      { "text": "تبرر أن الإعلان مناسب.", "scores": { "accountant": 0, "marketer": 2, "hr": 0 } }
+    ]
+  },
+  {
+    "id": 158,
+    "question": "مديرك يطلب إعلان سريع، ماذا تفعل؟",
+    "choices": [
+      { "text": "تركز على السرعة.", "scores": { "accountant": 0, "marketer": 2, "hr": 0 } },
+      { "text": "تركز على جودة الرسالة.", "scores": { "accountant": 0, "marketer": 3, "hr": 0 } }
+    ]
+  },
+  {
+    "id": 159,
+    "question": "تقرير المبيعات ضعيف، ماذا تفعل؟",
+    "choices": [
+      { "text": "تقترح خطة جديدة.", "scores": { "accountant": 0, "marketer": 3, "hr": 0 } },
+      { "text": "تلوم فريق المبيعات.", "scores": { "accountant": 0, "marketer": 2, "hr": 0 } }
+    ]
+  },
+  {
+    "id": 160,
+    "question": "فريقك يقترح فكرة مبتكرة، ماذا تفعل؟",
+    "choices": [
+      { "text": "توافق وتدعمها.", "scores": { "accountant": 0, "marketer": 3, "hr": 0 } },
+      { "text": "تتمسك بخطتك الأصلية.", "scores": { "accountant": 0, "marketer": 2, "hr": 0 } }
+    ]
+  },
+  {
+    "id": 161,
+    "question": "موظف جديد مرتبك في أول يوم، ماذا تفعل؟",
+    "choices": [
+      { "text": "تشرح له كل شيء خطوة بخطوة.", "scores": { "accountant": 0, "marketer": 0, "hr": 3 } },
+      { "text": "تتركه يتعلم بنفسه.", "scores": { "accountant": 0, "marketer": 0, "hr": 2 } }
+    ]
+  },
+  {
+    "id": 162,
+    "question": "زميلك يطلب إجازة طويلة، ماذا تفعل؟",
+    "choices": [
+      { "text": "تتحقق من القوانين وترد رسميًا.", "scores": { "accountant": 0, "marketer": 0, "hr": 3 } },
+      { "text": "تتفهم وضعه وتعطيه مرونة.", "scores": { "accountant": 0, "marketer": 0, "hr": 2 } }
+    ]
+  },
+  {
+    "id": 163,
+    "question": "مديرك يطلب توظيف سريع، ماذا تفعل؟",
+    "choices": [
+      { "text": "توظف بسرعة أي مرشح.", "scores": { "accountant": 0, "marketer": 0, "hr": 2 } },
+      { "text": "تختار بعناية حتى لو تأخرت.", "scores": { "accountant": 0, "marketer": 0, "hr": 3 } }
+    ]
+  },
+  {
+    "id": 164,
+    "question": "موظف يشتكي من ضغط العمل، ماذا تفعل؟",
+    "choices": [
+      { "text": "تسمعه وتبحث عن حل.", "scores": { "accountant": 0, "marketer": 0, "hr": 3 } },
+      { "text": "تطلب منه يتحمل أكثر.", "scores": { "accountant": 0, "marketer": 0, "hr": 2 } }
+    ]
+  },
+  {
+    "id": 165,
+    "question": "عندك مقابلة وظيفية، ماذا تفعل؟",
+    "choices": [
+      { "text": "تركز على الخبرات فقط.", "scores": { "accountant": 0, "marketer": 0, "hr": 2 } },
+      { "text": "تركز على الشخصية أيضًا.", "scores": { "accountant": 0, "marketer": 0, "hr": 3 } }
+    ]
+  },
+  {
+    "id": 166,
+    "question": "إدارة تطلب تقليل عدد الموظفين، ماذا تفعل؟",
+    "choices": [
+      { "text": "تقترح بدائل مثل إعادة توزيع العمل.", "scores": { "accountant": 0, "marketer": 0, "hr": 3 } },
+      { "text": "تنفذ القرار مباشرة.", "scores": { "accountant": 0, "marketer": 0, "hr": 2 } }
+    ]
+  },
+  {
+    "id": 167,
+    "question": "موظف متأخر دائمًا، ماذا تفعل؟",
+    "choices": [
+      { "text": "تنبهه رسميًا.", "scores": { "accountant": 0, "marketer": 0, "hr": 2 } },
+      { "text": "تجلس معه تفهم السبب.", "scores": { "accountant": 0, "marketer": 0, "hr": 3 } }
+    ]
+  },
+  {
+    "id": 168,
+    "question": "فريقك يحتاج تدريب، ماذا تفعل؟",
+    "choices": [
+      { "text": "تبحث عن دورة مناسبة.", "scores": { "accountant": 0, "marketer": 0, "hr": 3 } },
+      { "text": "تكتفي بتعليمات داخلية.", "scores": { "accountant": 0, "marketer": 0, "hr": 2 } }
+    ]
+  },
+  {
+    "id": 169,
+    "question": "موظف متفوق يطلب ترقية، ماذا تفعل؟",
+    "choices": [
+      { "text": "ترفع توصية مباشرة.", "scores": { "accountant": 0, "marketer": 0, "hr": 3 } },
+      { "text": "تنتظر حتى يحين وقت التقييم.", "scores": { "accountant": 0, "marketer": 0, "hr": 2 } }
+    ]
+  },
+ {
+  "id": 170,
+  "question": "إدارة تسألك عن رضا الموظفين، ماذا تفعل؟",
+  "choices": [
+    { "text": "تشرح بالأرقام من الاستبيانات.", "scores": { "accountant": 0, "marketer": 0, "hr": 3 } },
+    { "text": "تشرح بمواقف وتجارب عملية.", "scores": { "accountant": 0, "marketer": 0, "hr": 2 } }
+  ]
+}
+  ]
+
+
+
+ 
+      
+    
+  

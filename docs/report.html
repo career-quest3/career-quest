@@ -23,7 +23,7 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-              url('careerFields2.jpg') no-repeat center center;
+              url('../careerFields2.jpg') no-repeat center center;
     background-size: cover;
 }
 
@@ -268,7 +268,7 @@ p {
 
     <script>
 window.onload = function() {
-  fetch('get_test_results.php', { credentials: 'include' })
+  fetch('../get_test_results.php', { credentials: 'include' })
     .then(res => res.json())
     .then(rows => {
       if (!rows || rows.length === 0 || rows.error) {
@@ -295,7 +295,7 @@ window.onload = function() {
     });
 }
 
-fetch('get_scenarios_results.php', { credentials: 'include' })
+fetch('../get_scenarios_results.php', { credentials: 'include' })
   .then(res => res.json())
   .then(rows => {
       if (!rows || rows.length === 0 || rows.error) {

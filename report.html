@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+    <title> التقرير </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+    <style>
+
+/*  ----------------------------------- صوره الخلفيه ---------------------------------- */
+        
+        body {
+     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+              url('careerFields2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.main {
+   padding-top: 45px;
+}
+
+.header {
+
+    width: 100%;
+    height: 75px;
+    padding: 0;
+    position: fixed;
+    top: 0;          
+    left: 0;         
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.5);
+    border-bottom-left-radius: 10px;  
+    border-bottom-right-radius: 10px; 
+    z-index: 1000;   
+}
+
+
+.logo {
+    margin-left: 20px;
+    font-family: 'Suez One', serif;
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, rgb(10, 10, 151), rgb(100, 100, 230)); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+}
+
+
+.menu {
+    padding-right: 20px;
+}
+
+
+.menu ul {
+    display: flex;               
+    list-style: none;
+}
+
+.menu ul li {
+    margin-left: 25px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 4px 8px;
+    font-size: 17px;
+    display: block;
+   border: 2px solid rgba(87, 87, 152, 0.897);
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out, color 0.3s ease-in-out;
+}
+
+
+.menu ul li a:hover {
+    color: rgb(10, 10, 151);
+    transform: scale(1.1);
+}
+/*  ----------------------------------- بدايه تعديل الريبورت ---------------------------------- */
+/*  الريبورت سكشن  */
+.report-sec {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 40px;
+    border-radius: 10px;
+    width: 800px;
+    height: 90vh;
+    overflow-y: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* تعديل حجم ايلمنت p */
+p {
+    font-size: 24px;
+}
+/*  التهنئه */
+.congrats {
+    text-align: center;
+    width: 100%;
+}
+.congrats h1{
+    color:rgb(67, 67, 155);
+}
+/*  اقرب مجال */
+.fields-info {
+    text-align: center;
+    width: 100%;
+}
+.fields-info h1{
+    color:rgb(67, 67, 155);
+}
+/* اقرب مهن / سيناريو */
+.results {
+     text-align: right; 
+    width: 100%;
+}
+
+/* زر العودة للصفحة الرئيسية */
+.back-btn {
+    display: block;
+    margin: 30px auto 20px; /* مسافة من فوق ومن تحت */
+    padding: 10px 20px;
+    background: rgb(100, 100, 230); 
+    color: white;
+    border:none;
+    border-radius: 12px;
+    padding: 18px 42px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    transition:  background-color 0.3s ease, transform 0.2s ease;
+}
+.back-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* زر الطباعة */
+.print-btn {
+    display: block;
+    margin: 20px auto; /* مسافة من فوق ومن تحت */
+    padding: 10px 20px;
+   background: rgb(100, 100, 230); 
+    color: white;
+    border:none;
+    border-radius: 12px;
+    padding: 18px 42px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    transition:  background-color 0.3s ease, transform 0.2s ease;
+}
+.print-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.career-chart, .scenarios-chart {
+    width: 450px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.career-chart canvas, .scenarios-chart canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+        </style>
+         <!-- logo font -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Pixelify+Sans:wght@400..700&family=Suez+One&display=swap" rel="stylesheet">
+
+         <!-- Linking google fonts for icon -->
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
+    </head>
+    <body>
+
+      <div class="main">
+            <div class="header">
+            <div class="icon">
+                <h2 class="logo">Career Quest</h2>
+            </div>
+            
+            <div class="menu">
+                 <ul>
+                    <li><a href="scenario_test.php">اختبار السيناريوهات المهني</a></li>
+                    <li><a href="career_test.php">الاختبار المهني </a></li>
+                    <li><a href="register-page.php"> إنشاء حساب </a></li>
+                    <li><a href="index.html">الصفحة الرئيسية</a></li>
+                </ul>
+            </div>
+        </div>
+   
+        <!--------------  جزئيه الريبورت   ------------------>
+        <div class="report-sec">
+            
+            <!-- التهنئه -->
+            <div class="congrats">
+                <h1> !تهانينا </h1>
+             <p> أنهيت الاختبار وتم تحديد المجال المهني الاقرب لك </p>
+                </div>
+
+                <!-- اقرب مجال -->
+            <div class="fields-info">
+                <p> أقرب مجال مهني لك هو:<br></p>
+                   <h1> (اسم المجال)  </h1> 
+                   </div>
+
+                   <!-- النتائج -->
+                <div class="results">
+
+                    <!-- اعلى مهن -->
+                    <p> : اعلى ثلاثة مهن</p>
+                    <div  class="">
+                   <canvas id="career-chart"></canvas>
+                   </div>
+
+
+
+                   <!-- اعلى سيناريوهات -->
+                    <p> : اعلى ثلاثة سيناريوهات</p>
+                    <div class="">
+                   <canvas id="scenarios-chart" ></canvas>
+                   </div>
+
+                </div>
+
+
+
+
+                <!--         زر للطباعه        -->
+              
+                <button class="print-btn" onclick="downloadPDF()">تحميل التقرير PDF</button>
+
+                <!--                 زر العوده للصفحه الرئيسية                   -->
+        <button class="back-btn" onclick="window.location.href='index.html'">العوة للصفحة الرئيسية</button>
+
+
+        </div>
+    </body>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+window.onload = function() {
+  fetch('get_test_results.php', { credentials: 'include' })
+    .then(res => res.json())
+    .then(rows => {
+      if (!rows || rows.length === 0 || rows.error) {
+        console.log('No data or error:', rows);
+        return;
+      }
+
+      // نستخدم آخر نتيجة من الصفوف
+      const row = rows[rows.length - 1];
+
+      //تعرض المجال
+      const fieldDiv = document.querySelector('.fields-info h1');
+      fieldDiv.textContent = row.main_field || '(لم يتم تحديد المجال)';
+
+      const labels = ['career_1', 'career_2', 'career_3'].map(k => row[k]);
+      const data = ['career_1_percent', 'career_2_percent', 'career_3_percent'].map(k => Number(row[k]) || 0);
+
+      const ctx = document.getElementById('career-chart').getContext('2d');
+      new Chart(ctx, {
+        type: 'bar',
+        data: { labels, datasets: [{ label: 'النسبة المئوية', data }] },
+        options: { responsive: true, maintainAspectRatio: false, scales: { y: { beginAtZero: true, max: 100 } } }
+      });
+    });
+}
+
+fetch('get_scenarios_results.php', { credentials: 'include' })
+  .then(res => res.json())
+  .then(rows => {
+      if (!rows || rows.length === 0 || rows.error) {
+          console.log('No scenario data or error:', rows);
+          return;
+      }
+
+      const row = rows[rows.length - 1]; // آخر نتيجة
+      const labels = ['job1', 'job2', 'job3'].map(k => row[k]);
+      const data = ['job1_percent', 'job2_percent', 'job3_percent'].map(k => Number(row[k]) || 0);
+
+      const ctx = document.getElementById('scenarios-chart').getContext('2d');
+      new Chart(ctx, {
+          type: 'bar',
+          data: { labels, datasets: [{ label: 'النسبة المئوية', data }] },
+          options: { responsive: true, maintainAspectRatio: false, scales: { y: { beginAtZero: true, max: 100 } } }
+      });
+  });
+
+  async function downloadPDF() {
+    const apiKey = "c5xbHeKJBs2N31H3jTLjpj1yaBUL8HCakgfihDhU14CwM8tYbBVmFJLojwVrMISw"; 
+    const urlToConvert = window.location.href; // يحوّل نفس الصفحة الحالية
+
+    const apiURL = "https://api.html2pdf.app/v1/generate";
+
+    const response = await fetch(apiURL + "?apiKey=" + apiKey + "&url=" + encodeURIComponent(urlToConvert));
+    const blob = await response.blob();
+
+    const link = document.createElement("a");
+    link.href = window.URL.createObjectURL(blob);
+    link.download = "report.pdf";
+    link.click();
+}
+
+
+</script>
+</html>

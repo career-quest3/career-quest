@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>المجالات والمهن</title>
+ <!-- ✅ أضف هذا السطر هنا -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+  
+
+  
+  <style>
+    
+body {
+  font-family: 'Cairo', sans-serif;
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+              url('careerFields2.jpg') no-repeat center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  direction: rtl;
+}
+
+.card {
+  background: #cec5d8;
+  width: 200px;
+  height: 250px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);/* ظل خفيف */
+  border: 2px solid rgb(100, 100, 230); 
+  cursor: pointer;
+  transition: transform 0.2s;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px){}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 كروت في الصف */
+  gap: 20px;                             /* مسافة بين الكروت */
+  justify-content: center;              /* توسيط الشبكة */
+  margin: 20px auto;
+  max-width: 800px;                     /* يمنع التمدد الزائد */
+}
+
+.card img {
+width: 100%;
+ height: 200px;
+object-fit: cover; 
+}
+
+    .hidden { display: none; }
+    .back-btn {
+      margin: 20px;
+      background:lab(95.84% -3.1 -1.63 / 0.303);
+      color: #000000;
+     border: 2px solid rgb(100, 100, 230); 
+     padding: 8px 12px; 
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+    .back-btn:hover { transform: scale(1.05); }
+
+ .main-title {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  padding: 15px 20px;
+  border: 2px solid rgb(100, 100, 230); /* الإطار المطلوب */
+  border-radius: 10px;
+  display: inline-block;
+background-color: #cec5d8de; 
+}
+/* تنسيق العناوين في تفاصيل المهن والمجالات */
+div[id]:not(#fields) > h1 {
+  font-family: 'Cairo', sans-serif; /* الخط الرسمي */
+  font-size: 2.8rem;                 /* حجم كبير */
+  font-weight: 700;                  /* عريض */
+  color: #1a237e;                   /* أزرق رسمي */
+  text-align: center;               /* توسيط */
+  margin-bottom: 25px;
+  letter-spacing: 1.5px;
+}
+
+/* تنسيق الفقرات في تفاصيل المهن والمجالات */
+div[id]:not(#fields) > p {
+  font-family: 'Cairo', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  line-height: 1.8;
+}
+div[id]:not(#fields) iframe {
+  display: block;
+  margin: 0 auto;
+}
+.courses-section {
+  margin-top: 20px; 
+  background-color: #cec5d8a8;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid rgb(100, 100, 230);
+  width: 50%;
+  margin: 30px auto;
+}
+
+.courses-section h2 {
+  font-size: 1.8rem;
+  font-family: 'Cairo', sans-serif;
+  color: #1a237e;
+  margin-bottom: 15px;
+}
+
+.courses-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.course-card {
+
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 5px 8px;
+  border: 2px solid rgb(100, 100, 230);
+  transition: transform 0.2s;
+}
+
+.course-card:hover { 
+  transform: scale(1);
+}
+
+.course-card a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+
+    /* الفوتر */
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+  color: #666; /* لون رمادي هادئ */
+  background-color: transparent; /* لا يوجد شريط */
+  border: none;
+}
+  </style>
+</head>
+<body>
+
+  <!-- الصفحة الرئيسية: المجالات -->
+  <div id="fields">
+    <h1 class="main-title" >اختر مجالًا لاستعراض المهن المرتبطة به</h1>
+    <div class="container">
+      <div class="card" onclick="showField('health')"><img src="health-field.jpg" alt="الصحة">  الصحة</div>
+      <div class="card" onclick="showField('education')"><img src="Education-field.jpg" alt="التعليم"> التعليم</div>
+      <div class="card" onclick="showField('engineering')"><img src="Engineering-field.jpg" alt="الهندسة"> الهندسة</div>
+      <div class="card" onclick="showField('arts')"><img src="art-field.jpg" alt="الفن"> الفن</div>
+      <div class="card" onclick="showField('technology')"><img src="thecnology-field.jpg" alt="التقنيه"> التقنية</div>
+      <div class="card" onclick="showField('business')"><img src="Management-field.jpeg" alt="الاعمال والإدارة"> الأعمال والإدارة</div>
+    </div>
+  </div>
+
+  <!-- مجال الصحة -->
+  <div id="health" class="hidden">
+    <h1>مهنة الصحة</h1>
+    <div class="container">
+      <div class="card" onclick="showCareer('doctor')"><img src="health-field.jpg">طبيب</div>
+      <div class="card" onclick="showCareer('nurse')"><img src="health-field.jpg">ممرض</div>
+      <div class="card" onclick="showCareer('surgeon')"><img src="health-field.jpg">جراح</div>
+    </div>
+    <button class="back-btn" onclick="goBackToFields()">⬅ رجوع للمجالات</button>
+  </div>
+
+  <!-- مجال التعليم -->
+  <div id="education" class="hidden">
+    <h1>مهنة التعليم</h1>
+    <div class="container">
+      <div class="card" onclick="showCareer('teacher')"><img src="Education-field.jpg">معلم</div>
+      <div class="card" onclick="showCareer('counselor')"><img src="Education-field.jpg">مرشد طلابي</div>
+    </div>
+    <button class="back-btn" onclick="goBackToFields()">⬅ رجوع للمجالات</button>
+  </div>
+
+  <!-- مجال الهندسة -->
+  <div id="engineering" class="hidden">
+    <h1>مهنة الهندسة</h1>
+    <div class="container">
+      <div class="card" onclick="showCareer('software')"><img src="Engineering-field.jpg">مهندس برمجيات</div>
+      <div class="card" onclick="showCareer('architect')"><img src="Engineering-field.jpg">مهندس معماري</div>
+      <div class="card" onclick="showCareer('mechanical')"><img src="Engineering-field.jpg">مهندس ميكانيكا</div>
+    </div>
+    <button class="back-btn" onclick="goBackToFields()">⬅ رجوع للمجالات</button>
+  </div>
+
+  <!-- مجال الفن -->
+  <div id="arts" class="hidden">
+    <h1>مهنة الفن</h1>
+    <div class="container">
+      <div class="card" onclick="showCareer('artist')"><img src="art-field.jpg">فنان تشكيلي</div>
+      <div class="card" onclick="showCareer('designer')"><img src="art-field.jpg">مصمم جرافيك</div>
+    </div>
+    <button class="back-btn" onclick="goBackToFields()">⬅ رجوع للمجالات</button>
+  </div>
+
+  <!-- مجال التقنية -->
+  <div id="technology" class="hidden">
+    <h1>مهنة التقنية</h1>
+    <div class="container">
+      <div class="card" onclick="showCareer('programmer')"><img src="thecnology-field.jpg">مبرمج</div>
+      <div class="card" onclick="showCareer('cyber')"><img src="thecnology-field.jpg">مختص أمن سيبراني</div>
+    </div>
+    <button class="back-btn" onclick="goBackToFields()">⬅ رجوع للمجالات</button>
+  </div>
+
+  <!-- مجال الأعمال والإدارة -->
+  <div id="business" class="hidden">
+    <h1>مهنة الأعمال والإدارة</h1>
+    <div class="container">
+      <div class="card" onclick="showCareer('accountant')"><img src="Management-field.jpeg" >محاسب</div>
+      <div class="card" onclick="showCareer('marketer')"><img src="Management-field.jpeg" >مسوق</div>
+      <div class="card" onclick="showCareer('hr')"><img src="Management-field.jpeg" >موارد بشرية</div>
+    </div>
+    <button class="back-btn" onclick="goBackToFields()">⬅ رجوع للمجالات</button>
+  </div>
+
+
+  <!-- تفاصيل المهن -->
+  <div id="doctor" class="hidden">
+    <h1>مهنة الطبيب</h1>
+<p> هو المسؤول الأول عن تشخيص الأمراض ووصف العلاج المناسب، وهو عنصر أساسي في الحفاظ على صحة المجتمع. يتطلب هذا المجال دراسة معمقة، وصبرًا كبيرًا، وروحًا إنسانية عالية، حيث يتعامل الطبيب مع حالات صحية متنوعة وحساسة</p>
+<p><strong>✨نصيحة:</strong> إذا كنت تحب خدمة الناس، لديك رغبة في التعلم المستمر، وتمتلك قدرة على التعامل مع الضغوط، فإن مهنة الطب خيار رائع لك. استعد لدراسة طويلة لكن مجزية جدًا</p>
+    <h2> رحلة في عالم الطب: مهنة الطبيب عن قرب</h2>
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/mu5WzOL8-O8?si=CZIdLJMmQglHXI7u" title="YouTube video player" frameborder="0"></iframe>
+    <div class="courses-section">
+  <h2>🎓 كورسات لتطوير مهارات المهن الصحية</h2> <!-- تمت  -->
+  <div class="courses-container">
+    <div class="course-card">
+      <a href="https://www.coursera.org/browse/life-sciences/public-health" target="_blank">الصحة العامة</a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.khanacademy.org/science/health-and-medicine" target="_blank"> موارد مجانية مفصلة عن الطب</a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/browse/life-sciences/healthcare-management" target="_blank">إجراءات المكتب الطبي وتخصص أساسيات الإدارة</a>
+    </div>
+  </div>
+</div>
+    <button class="back-btn" onclick="goBackToField('health')">⬅ رجوع لمهن الصحة</button>
+  </div>
+
+
+  <div id="nurse" class="hidden">
+    <h1>مهنة الممرض</h1>
+<p> يقدم رعاية مباشرة وشاملة للمرضى، يعمل جنبًا إلى جنب مع الأطباء لضمان تقديم خدمات طبية فعالة. الممرض هو يد الطبيب التي تنفذ الرعاية اليومية وتحافظ على راحة المرضى</p>
+<p><strong>✨نصيحة:</strong> إذا كنت شخصًا رحيمًا، صبورًا، وتحب العمل ضمن فريق، فإن التمريض يوفر لك فرصة لتكون جزءًا هامًا من النظام الصحي مع فرص تطوير مستمرة</p>
+    <h2> رحلة في عالم الطب: مهنة الممرض عن قرب</h2>
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/IyZCMcq4zVY?si=Phg_gwRkpbHxvzii" title="YouTube video player" frameborder="0"></iframe>
+    <div class="courses-section">
+  <h2> كورسات لتطوير مهارات التمريض</h2> <!-- تمت  -->
+  <div class="courses-container">
+    <div class="course-card">
+      <a href="https://www.coursera.org/professional-certificates/nursing-prerequisites-essential-sciences-for-future-nurses" target="_blank">متطلبات التمريض: العلوم الأساسية للشهادة المهنية للممرضات في المستقبل</a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/learn/nursing-fundamentals-skills-for-patient-care-excellence" target="_blank">أساسيات التمريض: مهارات التميز في رعاية المرضى</a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/learn/the-nurses-toolkit" target="_blank"> مجموعة أدوات الممرضة </a>
+    </div>
+  </div>
+</div>
+    <button class="back-btn" onclick="goBackToField('health')">⬅ رجوع لمهن الصحة</button>
+  </div>
+
+
+  <div id="surgeon" class="hidden">
+    <h1>مهنة الجراح</h1>
+<p>الجراح متخصص في إجراء العمليات الجراحية التي تنقذ حياة المرضى أو تحسن من جودة حياتهم. يتطلب العمل دقة عالية، تركيزًا، ومهارات تقنية متقدمة</p>
+<p><strong>✨نصيحة:</strong> هذه المهنة تتطلب تدريبًا طويلًا وتطوير مهارات يدوية عالية. إذا كنت تتحمل الضغط ولديك اهتمام بالتفاصيل، الجراحة ستكون مجالًا مجزيًا للغاية</p>
+ <h2> رحلة في عالم الطب: مهنة الجراح عن قرب</h2>
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/nKP1v_ZXkbg?si=xpfzfE2li5Q28SA4" title="YouTube video player" frameborder="0"></iframe>
+    <div class="courses-section">
+  <h2>🎓 كورسات لتطوير مهارات الجراح</h2> <!-- تمت  -->
+  <div class="courses-container">
+    <div class="course-card">
+      <a href="https://www.coursera.org/specializations/human-anatomy-physiology-1" target="_blank">  علم التشريح البشري وعلم وظائف الاعضاء</a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/learn/trauma-surgery-basics" target="_blank"> أساسيات جراحة الصدمات </a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/specializations/human-anatomy-medical-terminology-fundamentals" target="_blank"> تخصص أساسيات التشريح البشري والمصطلحات الطبية </a>
+    </div>
+  </div>
+</div>
+    <button class="back-btn" onclick="goBackToField('health')">⬅ رجوع لمهن الصحة</button>
+  </div>
+
+  
+  <div id="teacher" class="hidden">
+    <h1>مهنة المعلم</h1>
+<p>المعلم هو أساس بناء المجتمعات، ينقل المعرفة ويشكل مهارات الأجيال القادمة. يتطلب العمل فهمًا جيدًا للمادة، صبرًا، وابتكارًا في طرق التعليم</p>
+<p><strong>✨نصيحة:</strong> إذا كنت تحب التواصل مع الآخرين، ولديك شغف لنقل المعرفة، فكر في تطوير مهاراتك التربوية لتصبح معلمًا مؤثرًا وملهمًا</p>
+ <h2> رحلة في عالم التعليم: مهنة المعلم عن قرب</h2>
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/-FkvBA3U5lg?si=aeZJZGACphlKUGfb" title="YouTube video player" frameborder="0"></iframe>
+<div class="courses-section">
+  <h2>🎓 كورسات لتطوير مهارات المعلم</h2> <!-- تمت  -->
+  <div class="courses-container">
+    <div class="course-card">
+      <a href="https://www.coursera.org/learn/being-a-teacher" target="_blank"> أسس التدريس من أجل أن تكون معلم  </a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/specializations/teacher-sel" target="_blank">  تخصص المعلم والتعلم الاجتماعي والعاطفي</a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/projects/improving-classroom-management-classdojo" target="_blank"> تحسين إدارة الفصول الدراسية </a>
+    </div>
+  </div>
+</div>
+    <button class="back-btn" onclick="goBackToField('education')">⬅ رجوع لمهن التعليم</button>
+  </div>
+
+  
+  <div id="counselor" class="hidden">
+    <h1>مهنة المرشد الطلابي</h1>
+<p>المرشد الطلابي يساند الطلاب في مواجهة التحديات الأكاديمية والنفسية، ويوجههم لتحقيق النجاح والتوازن في حياتهم</p>
+<p><strong>✨نصيحة:</strong> إذا كنت تستمع جيدًا، تمتلك مهارات تواصل عالية، وترغب في مساعدة الآخرين على النجاح، فهذه المهنة تناسبك</p>
+ <h2> رحلة في عالم التعليم: مهنة المرشد الطلابي عن قرب</h2>
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/DjBTwmNfKRU?si=H2PrqdWu1D4Z42t1"  title="YouTube video player" frameborder="0"></iframe>
+    <div class="courses-section">
+  <h2>🎓 كورسات لتطوير مهارات المرشد الطلابي</h2><!-- تمت  -->
+  <div class="courses-container">
+    <div class="course-card">
+      <a href="https://www.coursera.org/specializations/leading-with-impact-psychology-diversity-and-change" target="_blank">القيادة مع التأثير: علم النفس والتنوع وتخصص التغير  </a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/learn/guidance-processes-in-vocational-education-and-training" target="_blank">عمليات التوجيه في التعليم والتدريب المهني</a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/learn/communication-skill-course" target="_blank">مهارات التواصل الفعال</a>
+    </div>
+  </div>
+</div>
+    <button class="back-btn" onclick="goBackToField('education')">⬅ رجوع لمهن التعليم</button>
+  </div>
+
+
+  <div id="software" class="hidden">
+    <h1>مهندس البرمجيات</h1>
+<p>مهندس البرمجيات يصمم ويطور أنظمة الكمبيوتر والتطبيقات التي تسهل حياة الناس. العمل يتطلب مهارات تحليلية وبرمجية متقدمة</p>
+<p><strong>✨نصيحة:</strong> إذا كنت تحب حل المشكلات، والعمل على تطوير حلول مبتكرة، تعلم البرمجة بجد واجتهد في تحديث مهاراتك باستمرار</p>
+ <h2> رحلة في عالم الهندسة: مهنة مهندس البرمجيات عن قرب</h2>
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/AlqTPomaSLA?si=QGGAIdESghoI1csA"  title="YouTube video player" frameborder="0"></iframe>
+    <div class="courses-section">
+  <h2>🎓 كورسات لتطوير مهارات مهندس البرمجيات</h2><!-- تمت  -->
+  <div class="courses-container">
+    <div class="course-card">
+      <a href="https://www.coursera.org/learn/introduction-to-software-engineering" target="_blank"> مقدمة في هندسة البرمجيات </a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer" target="_blank">شهادة احترافيه في تطوير البرمجيات  </a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/specializations/software-engineering-fundamentals" target="_blank"> تخصص أساسيات هندسة البرمجيات التطبيقية   </a>
+    </div>
+  </div>
+</div>
+    <button class="back-btn" onclick="goBackToField('engineering')">⬅ رجوع لمهن الهندسة</button>
+  </div>
+
+
+  <div id="architect" class="hidden">
+    <h1>مهندس معماري</h1>
+<p>المهندس المعماري يصمم المباني والمساحات التي تجمع بين الجمال والوظيفة، ويهتم بجودة البيئة العمرانية.ة</p>
+<p><strong>✨نصيحة:</strong> إذا كان لديك حس فني وابتكار، وتهتم بالتفاصيل، فكر في تطوير مهارات الرسم والتصميم واستخدام برامج التصميم الحديثة</p>
+ <h2> رحلة في عالم الهندسة: مهنة المهندس المعماري عن قرب</h2>
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/UlTzmeRbYrI?si=dCSUoFstl_0PuWCK"  title="YouTube video player" frameborder="0"></iframe>
+<div class="courses-section">
+  <h2>🎓 كورسات لتطوير مهارات المهندس المعماري</h2><!-- تمت  -->
+  <div class="courses-container">
+    <div class="course-card">
+      <a href="https://www.coursera.org/learn/making-architecture" target="_blank">صنع التصميم المعماري</a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/specializations/data-architect-advanced" target="_blank"> تكامل بيانات المؤسسة والحوكمة والتخصص المعماري </a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/specializations/project-management-in-construction" target="_blank">  إدارة المشاريع في تخصص البناء </a>
+    </div>
+  </div>
+</div>
+    <button class="back-btn" onclick="goBackToField('engineering')">⬅ رجوع لمهن الهندسة</button>
+  </div>
+
+
+  <div id="mechanical" class="hidden">
+    <h1>مهندس ميكانيكا</h1>
+<p>يعمل مهندس الميكانيكا على تصميم وصيانة الآلات والأنظمة التي تدعم الصناعة والنقل والطاقة</p>
+<p><strong>✨نصيحة:</strong> إذا كنت تحب الفيزياء والرياضيات، وتمتلك مهارات تقنية، هذه المهنة تقدم فرصًا واسعة في مجالات متنوعة</p>
+ <h2> رحلة في عالم الهندسة: مهنة المهندس الميكانيكا عن قرب</h2>
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/v1VGoe7-VfA?si=bNxK2ci92GA-VNSv"title="YouTube video player" frameborder="0"></iframe>
+    <div class="courses-section">
+  <h2>🎓 كورسات لتطوير مهارات مهندس الميكانيكا</h2><!-- تمت  -->
+  <div class="courses-container">
+    <div class="course-card">
+      <a href="https://www.coursera.org/specializations/ai-for-mechanical-engineers" target="_blank"> الذكاء الاصطناعي لتخصص المهندسين الميكانيكيين</a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/learn/engineering-mechanics-statics" target="_blank">مقدمة في الميكانيكا الهندسية</a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/learn/engineering-mechanics-statics-2" target="_blank">  التطبيقات في الميكانيكا الهندسية</a>
+    </div>
+  </div>
+</div>
+    <button class="back-btn" onclick="goBackToField('engineering')">⬅ رجوع لمهن الهندسة</button>
+  </div>
+
+
+  <div id="artist" class="hidden">
+    <h1>فنان تشكيلي</h1>
+<p>الفنان التشكيلي يعبّر عن الأفكار والمشاعر من خلال الرسم، النحت، أو التصوير. يستخدم الألوان والأشكال ليعبّر عن رؤيته الفنية</p>
+<p><strong>✨نصيحة:</strong> طوّر مهاراتك الفنية، وشارك في المعارض، وكن دائم الاطلاع على المدارس الفنية المختلفة لتوسيع آفاقك</p>
+ <h2> رحلة في عالم الفن: مهنة الفنان التشكيلي عن قرب</h2>
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/QZQyV9BB50E?si=UVu2jGc-rdlbHO9Y" title="YouTube video player" frameborder="0"></iframe>
+    <div class="courses-section">
+  <h2>🎓 كورسات لتطوير مهارات الفنان التشكيلي</h2><!-- تمت  -->
+  <div class="courses-container">
+    <div class="course-card">
+      <a href="https://www.coursera.org/learn/arts-culture-strategy" target="_blank">استراتيجية الفنون والثقافة</a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/specializations/modern-contemporary-art-design" target="_blank"> تخصص الفن والتصميم الحديث والمعاصر</a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/specializations/creative-thinking-tools-for-success-and-leadership-specialization-imperial" target="_blank"> أدوات التفكير الإبداعي للنجاح والتخصص القيادي</a>
+    </div>
+  </div>
+</div>
+    <button class="back-btn" onclick="goBackToField('arts')">⬅ رجوع لمهن الفن</button>
+  </div>
+
+
+  <div id="designer" class="hidden">
+    <h1>مصمم جرافيك</h1>
+<p>مصمم الجرافيك يصنع تصاميم بصرية جذابة تساهم في نقل الرسائل بطريقة فعالة ومبتكرة</p>
+<p><strong>✨نصيحة:</strong> تعلم برامج التصميم، وكن دائمًا محدثًا بأحدث الاتجاهات في التصميم لتتمكن من المنافسة في السوق</p>
+ <h2> رحلة في عالم الفن: مهنة مصمم جرافيك عن قرب</h2>
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/OA0dB6rmhPc?si=1nr1t6Glq7KUOTIl" title="YouTube video player" frameborder="0"></iframe>
+    <div class="courses-section">
+  <h2>🎓 كورسات لتطوير مهارات المصمم الجرافيكي</h2><!-- تمت  -->
+  <div class="courses-container">
+    <div class="course-card">
+      <a href="https://www.coursera.org/learn/fundamentals-of-graphic-design" target="_blank">أساسيات التصميم الجرافيكي</a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/professional-certificates/adobe-graphic-designer" target="_blank">احتراف Adobe Graphic Designer Professional</a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/specializations/creative-design-tools-adobe-photoshop-illustrator-acrobat" target="_blank">أدوات التصميم الإبداعي: Adobe Photoshop، Illustrator، Acrobat Specialization  </a>
+    </div>
+  </div>
+</div>
+    <button class="back-btn" onclick="goBackToField('arts')">⬅ رجوع لمهن الفن</button>
+  </div>
+
+
+  <div id="programmer" class="hidden">
+    <h1>مبرمج</h1>
+<p>المبرمج يكتب الأكواد ويطور البرمجيات التي تساعد الشركات والأفراد في أداء مهامهم بكفاءة</p>
+<p><strong>✨نصيحة:</strong> ركز على تعلم لغات برمجة متعددة، وشارك في مشاريع حقيقية لتعزيز مهاراتك العملية</p>
+ <h2> رحلة في عالم التقنية: مهنة المبرمج عن قرب</h2>
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/LV_r2ahaKto?si=egj_LvCT9OX487U2"  title="YouTube video player" frameborder="0"></iframe>
+    <div class="courses-section">
+  <h2>🎓 كورسات لتطوير مهارات المبرمجين</h2><!-- تمت  -->
+  <div class="courses-container">
+    <div class="course-card">
+      <a href="https://www.coursera.org/specializations/building-with-code-programming" target="_blank">البناء بالرمز: أساسيات البرمجة والتخصص مفتوح المصدر</a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/learn/programming-in-python" target="_blank">أساسيات البرمجة بلغة Python</a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/learn/developing-frontend-apps-with-react" target="_blank">تطوير تطبيقات الواجهة الأمامية باستخدام React</a>
+    </div>
+  </div>
+</div>
+    <button class="back-btn" onclick="goBackToField('technology')">⬅ رجوع لمهن التقنية</button>
+  </div>
+
+
+  <div id="cyber" class="hidden">
+    <h1>مختص أمن سيبراني</h1>
+    <p>
+<p>يحمي مختص الأمن السيبراني البيانات والأنظمة من التهديدات والهجمات الإلكترونية</p>
+<p><strong>✨نصيحة:</strong> تعلم أساسيات الشبكات وأنظمة التشغيل، وكن دائمًا على اطلاع بأحدث تقنيات الحماية</p>
+ <h2> رحلة في عالم التقنية: مهنة مختص امن سبراني عن قرب</h2>
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/Kx4y9c7w2JQ?si=9rtuH2MFy0ZrXUxL" title="YouTube video player" frameborder="0"></iframe>
+    <div class="courses-section">
+  <h2>🎓 كورسات لتطوير مهارات الأمن السيبراني</h2><!-- تمت  -->
+  <div class="courses-container">
+    <div class="course-card">
+      <a href="https://www.coursera.org/learn/foundations-of-cybersecurity" target="_blank">أساسيات الأمن السيبراني</a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/specializations/cyber-security-data-privacy-ai-security" target="_blank">الأمن السيبراني: تخصص أمن البيانات والخصوصية والذكاء الاصطناعي</a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/specializations/certified-ethical-hacking-v12-cehv12-exam-prep-course" target="_blank">تخصص القرصنة الأخلاقية المعتمدة </a>
+    </div>
+  </div>
+</div>
+    <button class="back-btn" onclick="goBackToField('technology')">⬅ رجوع لمهن التقنية</button>
+  </div>
+
+
+  <div id="accountant" class="hidden">
+    <h1>محاسب</h1>
+<p>المحاسب مسؤول عن تسجيل وتحليل البيانات المالية لضمان الشفافية ودعم اتخاذ القرارات</p>
+<p><strong>✨نصيحة:</strong> اهتم بالتفاصيل، وتعلم استخدام برامج المحاسبة، وطور مهارات التحليل المالي</p>
+ <h2> رحلة في عالم ادارة الاعمال: مهنة المحاسب عن قرب</h2>
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/yYX4bvQSqbo?si=X2LlFOII-OuYy5S8" title="YouTube video player" frameborder="0"></iframe>
+    <div class="courses-section">
+  <h2>🎓 كورسات لتطوير مهارات المحاسب</h2><!-- تمت  -->
+  <div class="courses-container">
+    <div class="course-card">
+      <a href="https://www.coursera.org/specializations/finance-accounting" target="_blank">أساسيات المحاسبة والمالية</a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/learn/excel-basics-data-analysis-ibm" target="_blank">استخدام Excel في المحاسبة</a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/learn/ai-accounting-finance" target="_blank">تطبيقات الذكاء الاصطناعي في المحاسبة والمالية </a>
+    </div>
+  </div>
+</div>
+
+
+    <button class="back-btn" onclick="goBackToField('business')">⬅ رجوع لمهن الأعمال</button>
+  </div>
+  <div id="marketer" class="hidden">
+    <h1>مسوق</h1>
+<p>المسوق يطور استراتيجيات ترويج المنتجات والخدمات لزيادة المبيعات وبناء علاقة مع العملاء</p>
+<p><strong>✨نصيحة:</strong> تعلم مبادئ التسويق الرقمي، وكن مبدعًا في التواصل مع الجمهور</p>
+ <h2> رحلة في عالم ادارة الاعمال: مهنة المسوق عن قرب</h2>
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/zslTD2MqO0E?si=986S8U36WJwZnGAA"  title="YouTube video player" frameborder="0"></iframe>
+    <div class="courses-section">
+  <h2>🎓 كورسات لتطوير مهارات التسويق</h2><!-- تمت  -->
+  <div class="courses-container">
+    <div class="course-card">
+      <a href="https://www.coursera.org/specializations/marketing-fundamentals-strategy-case-studies" target="_blank">أساسيات التسويق وتخصص دراسات الحالة الاستراتيجية</a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/specializations/marketing-redes-sociales" target="_blank">التسويق عبر وسائل التواصل الاجتماعي</a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/learn/brand-management-strategies-for-a-strong-brand" target="_blank">إدارة العلامة التجارية: استراتيجيات لعلامة تجارية قوية</a>
+    </div>
+  </div>
+</div>
+    <button class="back-btn" onclick="goBackToField('business')">⬅ رجوع لمهن الأعمال</button>
+  </div>
+
+
+  <div id="hr" class="hidden">
+    <h1> موارد بشرية</h1>
+<p>يدير شؤون الموظفين، ويعمل على تطوير بيئة العمل وتحفيز الفريق</p>
+<p><strong>✨نصيحة:</strong> طور مهارات التواصل، وفهم القوانين والأنظمة المتعلقة بالعمل، وكن منفتحًا على حل النزاعات</p>
+ <h2> رحلة في عالم ادارة الاعمال: مهنة موظف موارد بشرية عن قرب</h2>
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/bI9RZjF-538?si=5hhQGi67dxO_w3GH"  title="YouTube video player" frameborder="0"></iframe>
+    <div class="courses-section">
+  <h2> كورسات لتطوير مهارات الموارد البشرية</h2><!-- تمت  -->
+  <div class="courses-container">
+    <div class="course-card">
+      <a href="https://www.coursera.org/learn/strategic-hrm-talent-performance-compensation-design" target="_blank"> إدارة الموارد البشرية الاستراتيجية: المواهب والأداء وتصميم التعويضات</a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/learn/recruiting-hiring-onboarding-employees" target="_blank">توظيف الموظفين وتوظيفهم وإعدادهم</a>
+    </div>
+    <div class="course-card">
+      <a href="https://www.coursera.org/learn/conflict-resolution--mediation-managing-workplace-harmony" target="_blank">حل النزاعات وتطوير الفريق</a>
+    </div>
+  </div>
+</div>
+    <button class="back-btn" onclick="goBackToField('business')">⬅ رجوع لمهن الأعمال</button>
+  </div>
+  
+
+  <footer class="footer">
+  <p>© 2026 Career Quest. جميع الحقوق محفوظة.</p>
+</footer>
+
+  <script>
+    function showField(fieldId) {
+      document.getElementById('fields').classList.add('hidden');
+      document.getElementById(fieldId).classList.remove('hidden');
+    }
+
+    function showCareer(careerId) {
+      // اخفاء جميع المجالات
+      document.querySelectorAll('#health, #education, #engineering, #arts, #technology, #business')
+        .forEach(div => div.classList.add('hidden'));
+      document.getElementById(careerId).classList.remove('hidden');
+    }
+
+    function goBackToFields() {
+      document.querySelectorAll('#health, #education, #engineering, #arts, #technology, #business')
+        .forEach(div => div.classList.add('hidden'));
+      document.getElementById('fields').classList.remove('hidden');
+    }
+
+    function goBackToField(fieldId) {
+      document.querySelectorAll('#doctor, #nurse, #surgeon, #teacher, #counselor, #software, #architect, #mechanical, #artist, #designer, #programmer, #cyber, #accountant, #marketer, #hr')
+        .forEach(div => div.classList.add('hidden'));
+      document.getElementById(fieldId).classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
